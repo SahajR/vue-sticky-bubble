@@ -1,6 +1,6 @@
 {
   "name": "vue-sticky-bubble",
-  "version": "0.1.3",
+  "version": "0.0.0-development",
   "description": "A floating menu bubble component for vue.js",
   "author": "SahajR <sahaj.ramachandran@gmail.com>",
   "repository": {
@@ -21,7 +21,9 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "vue": "^2.3.3"
@@ -91,7 +93,9 @@
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "travis-deploy-once": "^4.3.1",
+    "semantic-release": "^12.2.2"
   },
   "engines": {
     "node": ">= 4.0.0",
