@@ -1,6 +1,6 @@
 <template>
   <div ref="bubble" id="vsb-bubble" :style="appliedBubbleStyle">
-    <img src="../assets/logo.png" alt="Vue logo" :style="iconStyle" draggable="false">
+    <img :src="icon" :style="iconStyle" draggable="false">
     <div id="vsb-badge" v-if="hasBadgeCount" :style="appliedBadgeStyle">
       {{ badgeCount }}
     </div>
