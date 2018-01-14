@@ -69,7 +69,7 @@ module.exports = {
 | badgeCount | Number | Number to be displayed on the badge |
 
 ## Todo
-- [ ] Add unit tests
+- [x] Add unit tests
 - [ ] Use semantic versioning
 
 ## License
