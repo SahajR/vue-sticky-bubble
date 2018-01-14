@@ -1,9 +1,7 @@
 <template>
   <div ref="vsb-bubble" id="vsb-bubble" :style="appliedBubbleStyle">
     <img :src="icon" :style="iconStyle" draggable="false">
-    <div id="vsb-badge" v-if="hasBadgeCount" :style="appliedBadgeStyle">
-      {{ badgeCount }}
-    </div>
+    <div id="vsb-badge" v-if="hasBadgeCount" :style="appliedBadgeStyle">{{ badgeCount }}</div>
   </div>
 </template>
 <script>
