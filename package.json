@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A floating menu bubble component for vue.js",
   "author": "SahajR <sahaj.ramachandran@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SahajR/vue-sticky-bubble.git"
+  },
   "main": "dist/lib/vue-sticky-bubble.min.js",
   "private": false,
   "license": "MIT",
