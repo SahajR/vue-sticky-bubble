@@ -1,5 +1,5 @@
 <template>
-  <div ref="bubble" id="vsb-bubble" :style="appliedBubbleStyle">
+  <div ref="vsb-bubble" id="vsb-bubble" :style="appliedBubbleStyle">
     <img :src="icon" :style="iconStyle" draggable="false">
     <div id="vsb-badge" v-if="hasBadgeCount" :style="appliedBadgeStyle">
       {{ badgeCount }}
@@ -29,7 +29,7 @@ export default {
     },
     icon: {
       type: String,
-      default: '../assets/logo.png',
+      default: 'https://vuejs.org/images/logo.png',
     },
     badgeStyle: {
       type: Object,
@@ -63,7 +63,7 @@ export default {
       }
     },
     tick() {
-      const bubble = this.$refs.bubble;
+      const bubble = this.$refs['vsb-bubble'];
       if (!bubble) return;
 
       requestAnimationFrame(this.tick);
@@ -186,7 +186,7 @@ export default {
       return;
     }
 
-    const bubble = this.$refs.bubble;
+    const bubble = this.$refs['vsb-bubble'];
     const container = bubble.parentNode;
 
     const containerStyle = window.getComputedStyle(container, null);
@@ -244,7 +244,7 @@ export default {
     this.tick();
   },
   beforeDestroy() {
-    const bubble = this.$refs.bubble;
+    const bubble = this.$refs['vsb-bubble'];
     const container = bubble.parentNode;
 
     bubble.removeEventListener('mousedown', this.pointerDownListener);
