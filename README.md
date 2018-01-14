@@ -70,9 +70,6 @@ module.exports = {
 | badgeStyle | Object | Style object for custom badge style |
 | badgeCount | Number | Number to be displayed on the badge |
 
-## Todo
-- [x] Add unit tests
-- [ ] Use semantic versioning
 
 ## License
 ```
