@@ -5,9 +5,9 @@
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="4.492" timestamp="Sun, 14 Jan 2018 20:14:18 GMT">
+    tests="1" time="4.908" timestamp="Sun, 14 Jan 2018 20:53:14 GMT">
   
-    <testcase name="Badge must correctly switch position" classname="test" time="4.492" assertions="6">
+    <testcase name="Badge must correctly switch position" classname="test" time="4.908" assertions="6">
 
     
 

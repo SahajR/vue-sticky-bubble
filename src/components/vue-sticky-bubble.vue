@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+import includes from 'array-includes';
 import { FRICTION,
          RESTING_PERIOD,
          REBOUND_STRENGTH,
@@ -187,8 +188,12 @@ export default {
     const bubble = this.$refs['vsb-bubble'];
     const container = bubble.parentNode;
 
+    if (!bubble || !container) {
+      return;
+    }
+
     const containerStyle = window.getComputedStyle(container, null);
-    if (!['relative', 'absolute'].includes(containerStyle.position)) {
+    if (!includes(['relative', 'absolute'], containerStyle.position)) {
       throw new Error('Vue sticky bubble requires its parent to be positioned absolutely/relatively.');
     }
 
