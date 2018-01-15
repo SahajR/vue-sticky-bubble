@@ -1,3 +1,8 @@
 import vueStickyBubble from './components/vue-sticky-bubble';
 
-export default vueStickyBubble;
+const vueStickyBubblePlugin = {};
+vueStickyBubblePlugin.install = (Vue) => {
+  Vue.component(vueStickyBubble.name, vueStickyBubble);
+};
+
+export default vueStickyBubblePlugin;

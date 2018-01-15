@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VueStickyBubble from '../../../src/lib';
+import VueStickyBubble from '../../../src/components/vue-sticky-bubble';
 
 describe('VueStickyBubble.vue', () => {
   it('should render correct contents without badge count', () => {
