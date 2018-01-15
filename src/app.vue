@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import VueStickyBubble from './components/vue-sticky-bubble';
+import Vue from 'vue';
+import VueStickyBubblePlugin from './lib';
+
+Vue.use(VueStickyBubblePlugin);
 
 export default {
   name: 'app',
-  components: {
-    VueStickyBubble,
-  },
   methods: {
     tapHandler() {
       // Handle tap
